@@ -1,0 +1,80 @@
+/* General navbar styling */
+.navbar {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff !important;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #ffcc00 !important;
+  transform: scale(1.1);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: #fff !important;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffcc00 !important;
+  transform: translateY(-2px);
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  background-color: #2a5298;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px; /* Add some padding to make it look more spacious */
+  border-radius: 8px; /* Rounded corners by default */
+}
+
+.dropdown-item:hover {
+  background-color: #ffcc00;
+  color: #1e3c72 !important;
+  transform: scale(1.02); /* Reduced scale for smaller hover effect */
+  border-radius: 10px; /* Rounded corners on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Toggler button */
+.navbar-toggler {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}

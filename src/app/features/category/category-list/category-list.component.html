@@ -1,0 +1,39 @@
+<div class="container">
+  <h1 class="mt-3">Category List</h1>
+
+  <div class="d-flex justify-content-end mt-3">
+    <a [routerLink] = "['/admin/categories/add']" class="btn btn-success">Add Category</a>
+  </div>
+
+  <table class="table table-bordered mt-4">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">URL</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example row (replace with dynamic content from DB) -->
+      <tr>
+        <td>1</td>
+        <td>Technology</td>
+        <td>/category/technology</td>
+        <td>
+          <a href="#" class="btn btn-warning btn-sm">Edit</a>
+          <a href="#" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Science</td>
+        <td>/category/science</td>
+        <td>
+          <a href="#" class="btn btn-warning btn-sm">Edit</a>
+          <a href="#" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
